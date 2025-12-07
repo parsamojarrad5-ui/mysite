@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>پیام ویژه</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(-45deg, #ff6ec4, #7873f5, #42f5b7, #f5e642);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        font-family: 'Courier New', monospace;
+        color: #fff;
+        text-align: center;
+    }
+
+    @keyframes gradientBG {
+        0% {background-position:0% 50%;}
+        50% {background-position:100% 50%;}
+        100% {background-position:0% 50%;}
+    }
+
+    .text-container {
+        font-size: 2em;
+        border: 3px solid #fff;
+        padding: 20px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        background: rgba(0,0,0,0.2);
+    }
+
+    .typing {
+        display: inline-block;
+        white-space: pre;
+        overflow: hidden;
+        border-right: .15em solid #fff;
+        animation: blinkCursor 0.75s step-end infinite;
+    }
+
+    @keyframes blinkCursor {
+        0%, 100% { border-color: transparent; }
+        50% { border-color: #fff; }
+    }
+</style>
+</head>
+<body>
+<div class="text-container">
+    <div id="message" class="typing"></div>
+</div>
+
+<script>
+    const text = "به ▓╠☞『Ņ͜͡Ë͜͡Ġ͜͡Ä͜͡Ņ͜͡』☜╣▓ احترام بزار!";
+    const messageEl = document.getElementById('message');
+    let i = 0;
+
+    function typeWriter() {
+        if (i < text.length) {
+            messageEl.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100); // سرعت تایپ
+        }
+    }
+
+    typeWriter();
+</script>
+</body>
+</html>

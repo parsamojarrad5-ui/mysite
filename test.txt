@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پیام ویژه</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  }
+</style>
+</head>
+<body>
+<h1>به ▓╠☞『Ņ͜͡Ë͜͡Ġ͜͡Ä͜͡Ņ͜͡』☜╣▓ احترام بزار!</h1>
+</body>
+</html>
